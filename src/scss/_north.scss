@@ -40,9 +40,11 @@
         &__rightside-h4 {
             color: #fff;
             font-size: 1.3em;
-            text-align: center;
             letter-spacing: 1px;
             margin-top: 1.5em;
+            margin-left: 20px;
+            width: 90%;
+            text-align: center;
     }
 }
 
@@ -50,10 +52,6 @@
     .north__rightside-head {
         width: 90%;
         text-align: center;
-    }
-    .north__rightside-foot {
-        width: 80%;
-        margin: 0 auto;
     }
 
     .north__rightside-h3 {
@@ -68,6 +66,8 @@
         text-align: center;
         letter-spacing: 0px;
         margin-top: 1em;
+        width: 80%;
+        margin: 0 auto;
     }
 }  
 
