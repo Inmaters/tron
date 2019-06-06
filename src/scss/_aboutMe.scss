@@ -1,0 +1,122 @@
+.aboutMe {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 40% 60%;
+    grid-row-gap: 0px;
+    grid-template-areas: 
+    "aboutMe__top aboutMe__top"
+    "aboutMe__leftside aboutMe__rightside";
+        &__top {
+            grid-area: aboutMe__top;
+            display: flex;
+            justify-content: center;
+        }
+        &__top-icon {
+            width: 200px;
+        }
+        &__top-h3 {
+            font-size: 2em;
+            color: white;
+            font-weight: 100;
+            margin-top: 1em;
+        }
+        &__top-span {
+            font-size: 1.5em;
+            color: #fac832;  
+        }
+        &__leftside {
+            grid-area: aboutMe__leftside;             
+        }
+        &__leftside-image {
+            border: 6px solid #fac832;
+            vertical-align: middle;
+            margin: 10% 5% 25% 25%;
+        }
+        &__rightside {
+            grid-area: aboutMe__rightside;
+        }
+        &__rightside-h3 {
+            font-size: 5em;
+            color: white;
+            font-weight: 100;
+            margin-top: 2%;
+            margin-left: 3%;
+        }
+        &__rightside-h4 {
+            font-size: 2.5em;
+            text-align: left;
+            color: #fac832;
+            font-weight: 100;
+             margin-left: 3%;
+        }
+        &__rightside-h5 {
+            font-size: 1.3em;
+            text-align: left;
+            color: white;
+            font-weight: 100;
+             margin-left: 3%;
+        }
+        &__rightside-p {
+            font-size: 1.3em;
+            color: white;   
+            text-align: left;
+            width: 90%;
+            margin-left: 3%;
+            margin-bottom: 15%;  
+        }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    .aboutMe__top-icon {
+            width: 170px;
+        }
+
+    .aboutMe__rightside-h3 {
+        font-size: 30px;
+    }
+
+    .aboutMe__rightside-h4 {
+        font-size: 1em;
+    }
+
+    .aboutMe__rightside-p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+
+    .aboutMe {
+        display: flex;
+    }
+    
+    .aboutMe__top-icon {
+        width: 120px;
+        height: 120px;
+    }
+    .aboutMe__top-h3 {
+       display: none;
+    }
+    .aboutMe__leftside {
+        display: none;
+    }
+    .aboutMe__rightside-h3 {
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+
+    .aboutMe__rightside-h4 {
+        font-size: 1.1em;
+        margin-bottom: 25px;
+    }
+
+    .aboutMe__rightside-h5 {
+        font-size: 1em;
+    }
+
+    .aboutMe__rightside-p {
+        font-size: 0.8em;
+    }
+}
+

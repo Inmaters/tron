@@ -1,0 +1,16 @@
+.quotes {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    grid-row-gap: 0px;
+        &__image {
+            width: 100%;
+            display: block;
+                &:hover {
+                    position: relative;
+                    transform: scale(1.2);
+                    transition: 1s;
+                }
+        }
+        
+}

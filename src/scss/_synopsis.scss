@@ -1,0 +1,70 @@
+.synopsis {
+    background: url("../images/banner1.jpg") no-repeat;
+    background-size: cover;
+    min-height: 500px;    
+    display: grid;
+    grid-template-columns: 50% 50%;
+        &__leftside {
+            margin-left: 13%;
+            margin-top: 10%;
+        }
+        &__leftside-top {
+            display: flex;
+        }
+        &__leftside-h3 {
+            font-size: 2em;
+            color: white;
+            margin-top: 0.5em;
+            font-weight: 100;
+        }
+        &__leftside-span{
+            font-size: 1.5em;
+            color: #fac832;
+        }
+        &__leftside-p {
+            font-size: 1.2em;
+            color: rgb(228, 232, 235);
+            line-height: 25px; 
+            margin-top: 1em;
+        }
+        &__rightside {
+            display: flex;
+            flex-direction: column;   
+        }     
+        &__rightside-top {
+            @include synopsis;
+        }
+        &__rightside-center {
+            @include synopsis;
+        }
+        &__rightside-bottom {
+            @include synopsis;
+            margin-bottom: 10%;
+        }
+        &__rightside-p {
+            font-size: 1em;
+            color: rgb(228, 232, 235);
+            line-height: 1.2em; 
+            margin-top: 0.5em;
+        }
+        &__rightside-h4 {
+            font-size: 2em;
+            color: white;
+            font-weight: 100;
+        }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+
+    .synopsis {
+        display: flex;
+        flex-direction: column;
+    }
+    .synopsis__leftside {
+        margin: 0 10px;
+    }
+
+    .synopsis__leftside-p {
+        text-align: center;
+    }
+}

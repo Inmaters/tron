@@ -1,0 +1,142 @@
+.north {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+        &__icon {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            top: -10%;
+            height: 100%;   
+        }
+        &__icon-image {    
+            height: 30%;
+        }
+        &__leftside-image {
+            width: 100%;
+            vertical-align: middle;
+        }
+        &__rightside-head {
+            margin-top: 20em;
+            width: 80%;
+            margin: 0 auto;
+        }
+        &__rightside-h3 {
+            font-size: 2em;
+            color: white;
+            margin-bottom: 1em;
+            margin-top: 2em;
+        }
+        &__rightside-span {
+            color: #fac832;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+        &__rightside-p {
+            font-size: 1em;
+            color: #A5A886;
+            margin-bottom: 1em;
+        }
+        &__rightside-h4 {
+            color: #fff;
+            font-size: 1.3em;
+            text-align: center;
+            letter-spacing: 1px;
+            margin-top: 1.5em;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px){
+    .north__rightside-head {
+        width: 90%;
+        text-align: center;
+    }
+    .north__rightside-foot {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .north__rightside-h3 {
+        margin-bottom: 0.5em;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .north__rightside-h4 {    
+        font-size: 1em;
+        text-align: center;
+        letter-spacing: 0px;
+        margin-top: 1em;
+    }
+}  
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    .north__icon {
+        top: -5%;  
+    }
+
+    .north__icon-image {    
+        height: 20%;
+    }
+
+    .north__rightside-head {
+        width: 90%;
+    }
+
+    .north__rightside-h3 {
+        font-size: 1.3em;
+        margin-bottom: 0.2em;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .north__rightside-p {
+        font-size: 0.8em;
+        margin-bottom: 0.6em;
+    }
+    .north__rightside-h4 {
+        font-size: 0.9em;
+        letter-spacing: 0px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .north {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .north__icon {
+        display: none;
+    }
+
+    .north__icon-image {    
+        display: none;
+    }
+
+    .north__rightside-h4 {
+        font-size: 12px;
+        letter-spacing: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .north__rightside-head {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .north__rightside-h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .north__rightside-p {
+        font-size: 10px;
+        margin-bottom: 0.7em;
+        text-align: center;
+    }   
+}

@@ -1,0 +1,28 @@
+.footer__map {
+    background: url("../images/map.jpg");
+    background-size: cover;
+    background-position: center;
+    border-top: 14px solid #fac832;
+    border-left: 14px solid #fac832;
+    border-bottom: 14px solid#fac832;
+    margin: 3em 0 auto auto;
+    height: 66%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    .footer__map {
+        border-top: 10px solid #fac832;
+        border-left: 10px solid #fac832;
+        border-bottom: 10px solid#fac832;
+        margin: 4em 0 auto auto;
+        height: 50%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+
+    .footer__map {
+        display: none;
+    }
+}
