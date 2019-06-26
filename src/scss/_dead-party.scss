@@ -1,60 +1,59 @@
 .dead-party {
     display: flex;
     flex-direction: column;
-        &__top {
-            display: flex;
-            justify-content: center;
-            margin-top: 2%;     
-        }
-        
-        &__top-h3 {
-            margin-top: 2%;
-            font-size: 2em;
-            color: white;
-        }
-        &__top-span{
-            color: #fac832;
-            font-weight: 600;
-            font-size: 1.5em;
-        }
-        &__top-p {
-            text-align: center;
-            color: rgb(228, 232, 235);
-            margin-top: 2%;
-            font-size: 20px;
-            letter-spacing: 2px;
-        }
-        &__footer {
-            display: flex;
-            margin: 3em auto;
-        }
-        &__footer-button {
-            padding: 0.5em 1em;
-            margin: 0 1em;
-            border: 1px solid #1a1a1a;
-                &:hover {
-                    border: 1px solid #fac832;
-                    transform: scale(1.05);
-                    transition: 0.5s
-                }
-        }        
-        &__footer-button:hover &__footer-link {
-            color: #fac832;
-        }
-        &__footer-link {
-            color: rgb(228, 232, 235);
-            text-decoration: none; 
-            text-transform: uppercase; 
-        }
-        &__footer-activity {
-            border: 1px solid #fac832;
-                &__footer-link {
-                    color: #fac832;
-                }
-        }
+    &__top {
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;     
+    }
+    &__top-h3 {
+        margin-top: 2%;
+        font-size: 2em;
+        color: white;
+    }
+    &__top-span{
+        color: #fac832;
+        font-weight: 600;
+        font-size: 1.5em;
+    }
+    &__top-p {
+        text-align: center;
+        color: rgb(228, 232, 235);
+        margin-top: 2%;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    &__footer {
+        display: flex;
+        margin: 3em auto;
+    }
+    &__footer-button {
+        padding: 0.5em 1em;
+        margin: 0 1em;
+        border: 1px solid #1a1a1a;
+            &:hover {
+                border: 1px solid #fac832;
+                transform: scale(1.05);
+                transition: 0.5s
+            }
+    }        
+    &__footer-button:hover &__footer-link {
+        color: #fac832;
+    }
+    &__footer-link {
+        color: rgb(228, 232, 235);
+        text-decoration: none; 
+        text-transform: uppercase; 
+    }
+    &__footer-activity {
+        border: 1px solid #fac832;
+            &__footer-link {
+                color: #fac832;
+            }
+    }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px){
+@media screen and (max-width: 767px){
 
     .dead-party__footer {
         flex-direction: column;

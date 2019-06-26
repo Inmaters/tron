@@ -12,7 +12,8 @@
             justify-content: center;
         }
         &__top-icon {
-            width: 200px;
+            width: 150px;
+            height: 150px;
         }
         &__top-h3 {
             font-size: 2em;
@@ -66,10 +67,20 @@
         }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen and (max-width: 1023px){
+    .aboutMe {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .aboutMe__rightside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
     .aboutMe__top-icon {
             width: 170px;
+            height: 170px;
         }
 
     .aboutMe__rightside-h3 {
@@ -85,7 +96,7 @@
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px){
+@media screen and (max-width: 767px){
 
     .aboutMe {
         display: flex;
